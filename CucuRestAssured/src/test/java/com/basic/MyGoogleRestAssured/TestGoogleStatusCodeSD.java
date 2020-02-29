@@ -11,6 +11,7 @@ public class TestGoogleStatusCodeSD {
 	
 	Response res ;
 	
+	
 	@Given("^User hit google applicaiton$")
 	public void User_hit_google_applicaiton(){
 		res = RestAssured.given().get("https://www.google.com");
