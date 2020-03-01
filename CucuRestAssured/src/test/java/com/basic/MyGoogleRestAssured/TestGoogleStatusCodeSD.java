@@ -7,16 +7,14 @@ import cucumber.api.java.en.Then;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class TestGoogleStatusCodeSD {
-	
+public class TestGoogleStatusCodeSD 
+{
 	Response res ;
-	
 	
 	@Given("^User hit google applicaiton$")
 	public void User_hit_google_applicaiton(){
 		res = RestAssured.given().get("https://www.google.com");
 	}
-	
 	
 	@Then("^user checks \"([^\"]*)\" status code$")
 	public void user_checks_status_code(String sCode){

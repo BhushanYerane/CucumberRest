@@ -3,6 +3,7 @@ package com.basic.postUpdatedJsonSD;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
@@ -54,23 +55,7 @@ public class MyPostFromTextFile {
 		int idInt = Integer.parseInt(idValue);
 		Assert.assertTrue(idInt > 0);
 		
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 
 }
  

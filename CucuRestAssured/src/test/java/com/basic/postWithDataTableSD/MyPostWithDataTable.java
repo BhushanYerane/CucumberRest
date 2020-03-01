@@ -4,6 +4,7 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
@@ -23,8 +24,8 @@ import org.json.JSONObject;
 import org.junit.Assert;
 
 
-public class MyPostWithDataTable {
-	 
+public class MyPostWithDataTable 
+{
 	Response resp ;
 	
 	@Given("^user hit the post request with \"([^\"]*)\" name$")
@@ -43,17 +44,12 @@ public class MyPostWithDataTable {
 	    
 	    //Do POST request
 	    resp = RestAssured.given().accept(ContentType.JSON).relaxedHTTPSValidation().
-				when().body(newJsonStr).post("https://reqres.in/api/users");
-		
-
-		
+				when().body(newJsonStr).post("https://reqres.in/api/users");	
 	}
 	
 	@Then("^user validate followind data$")
 	public void user_validate_followind_data(DataTable table){
-		
-		
-		
+			
 		List<List<String>> data = table.raw();
 //		int i = data.size();
 //		int j = data.get(0).size();
@@ -85,19 +81,5 @@ public class MyPostWithDataTable {
 	public void I_will_validate_other_parameter(){
 		System.out.println("last line of code ");
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
  

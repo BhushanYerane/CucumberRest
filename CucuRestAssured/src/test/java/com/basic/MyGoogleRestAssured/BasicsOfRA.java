@@ -6,8 +6,9 @@ import org.junit.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class BasicsOfRA {
-	
+public class BasicsOfRA 
+{
+
 //	Response res = RestAssured.get("https://google.com/");
 //	int actualStatCode = res.getStatusCode();
 //	System.out.println("actualStatCode ="+actualStatCode);
@@ -31,9 +32,6 @@ public class BasicsOfRA {
 		
 		String actualData = res.getBody().asString();
 		System.out.println("Data =    "+actualData);
-		
-		
-
 	}
 
 }

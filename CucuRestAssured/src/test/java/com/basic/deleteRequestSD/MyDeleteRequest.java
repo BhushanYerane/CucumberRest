@@ -20,8 +20,8 @@ import io.restassured.response.Response;
 import org.json.JSONObject;
 import org.junit.Assert;
 
-public class MyDeleteRequest {
-	 
+public class MyDeleteRequest 
+{
 	Response resp ;
 	
 	@Given("^user hit the delete request$")
@@ -29,9 +29,9 @@ public class MyDeleteRequest {
 		
 		// create user 
 		Response Postresp = RestAssured.given().accept(ContentType.JSON)
-				.relaxedHTTPSValidation()
-				.when().body("{ \"name\": \"BHUSHAN\", \"job\":\"QA consultant\"}")
-				.post("https://reqres.in/api/users");
+							.relaxedHTTPSValidation()
+							.when().body("{ \"name\": \"BHUSHAN\", \"job\":\"QA consultant\"}")
+							.post("https://reqres.in/api/users");
 		
 		// get ID of user
 		String userID = Postresp.getBody().jsonPath().getString("id");

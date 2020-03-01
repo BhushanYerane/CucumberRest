@@ -11,8 +11,8 @@ import io.restassured.RestAssured;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 
-public class GETRequestTestSD {
-	
+public class GETRequestTestSD
+{
 	Response res;
 	
 	@Given("^user start the rest asured test$")

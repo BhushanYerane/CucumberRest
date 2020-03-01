@@ -23,23 +23,19 @@ import io.restassured.response.Response;
 import org.json.JSONObject;
 import org.junit.Assert;
 
-public class MyPostStringJson {
-	 
+public class MyPostStringJson 
+{ 
 	Response resp ;
 	
 	@Given("^user hit the post request from String$")
-	public void user_hit_the_post_request_with_String() throws IOException{
-		
-		
-		
+	public void user_hit_the_post_request_with_String() throws IOException
+	{	
 		resp = RestAssured.given().accept(ContentType.JSON).relaxedHTTPSValidation().
 				when().body("{ \"name\": \"BHUSHAN\", \"job\":\"QA consultant\"}").post("https://reqres.in/api/users");
 //		resp.then().log().all();
 //		resp.then().log().status();
 		System.out.println("====="+resp.asString());
-		System.out.println("status code is = "+resp.getStatusCode());
-		
-		
+		System.out.println("status code is = "+resp.getStatusCode());		
 	}
 	
 	@Then("user validate the id is not null")

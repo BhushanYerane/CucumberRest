@@ -1,9 +1,7 @@
 package com.basic.datadrivenForGetSD;
 
 import java.util.List;
-
 import org.junit.Assert;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -11,8 +9,8 @@ import io.restassured.RestAssured;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 
-public class GETRequestTestSD {
-	
+public class GETRequestTestSD 
+{	
 	Response res;
 	
 	@Given("^user start the rest asured test$")
@@ -40,10 +38,7 @@ public class GETRequestTestSD {
 //		List<Object> cirList = res.body().jsonPath().getList("MRData.CircuitTable.Circuits.circuitId");
 //		int cirSize = cirList.size();
 //		System.out.println("cir size ="+cirSize);
-		
-		
-		
-		
+				
 	}
 
 }

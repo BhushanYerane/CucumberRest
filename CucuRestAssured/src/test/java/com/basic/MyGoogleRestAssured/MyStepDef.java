@@ -8,7 +8,8 @@ import cucumber.api.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class MyStepDef {
+public class MyStepDef
+{
 		Response res;
 		
 		@Given("^google have website$")
@@ -27,4 +28,4 @@ public class MyStepDef {
 			System.out.println("actualStatCode ="+actualStatCode);
 			Assert.assertTrue(200==actualStatCode);
 		}
-	}
+}

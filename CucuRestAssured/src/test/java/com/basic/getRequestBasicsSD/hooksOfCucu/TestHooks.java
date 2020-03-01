@@ -8,12 +8,10 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class TestHooks {
-	
+public class TestHooks 
+{	
 	RequestSpecification req;
-	
-	
-	
+		
 	@Before
 	public void testBaseURI(){
 		System.out.println("in before1");

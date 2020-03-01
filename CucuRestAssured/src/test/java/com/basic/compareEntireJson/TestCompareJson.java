@@ -5,9 +5,9 @@ import org.skyscreamer.jsonassert.JSONCompareMode;
 
 import cucumber.api.java.en.Given;
 
-public class TestCompareJson {
-	
-	
+public class TestCompareJson 
+{
+
 	//LENIENT : means that even if the actual JSON contains extended fields, the test will still pass
 	//STRICT : means that if the actual JSON contains extended fields, the test will still FAIL
 	

@@ -12,8 +12,8 @@ import io.restassured.RestAssured;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 
-public class DatatableGETRequestTestSD {
-	
+public class DatatableGETRequestTestSD 
+{
 	Response res;
 	
 	@Given("^user start the rest asured test$")
@@ -48,10 +48,7 @@ public class DatatableGETRequestTestSD {
 				String actualLiming = res.body().jsonPath().getString(path);
 				Assert.assertTrue(actualLiming.equals(value));
 		}
-		
-		
-		
-		
+				
 	//	String actualLiming = res.body().jsonPath().getString(jsnpath);
 	//	Assert.assertTrue(actualLiming.equals(value));		
 		
